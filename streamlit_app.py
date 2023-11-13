@@ -17,6 +17,6 @@ from langchain.llms import GooglePalm
 import google.generativeai
 llm = GooglePalm(google_api_key=st.secrets['api_key'])
 
-from langchain.agents import create_pandas_dataframe_agent
+from langchain_experimental.agents import create_pandas_dataframe_agent
 agent=create_pandas_dataframe_agent(llm,df)
 agent.run("return a sql with join between customer and customer_address based on fk with primary=true")

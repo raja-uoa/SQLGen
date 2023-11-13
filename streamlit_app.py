@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Streamlit app title
-st.title("STTM TO Code")
+st.title("ST_Mapping TO Code")
 
 # Text input widget
 uploaded_file=st.file_uploader("Upload the STTM") 

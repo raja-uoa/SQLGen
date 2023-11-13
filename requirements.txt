@@ -4,4 +4,4 @@ openpyxl
 google-generativeai
 langchain
 langchain_experimental
-tabluate
+tabulate

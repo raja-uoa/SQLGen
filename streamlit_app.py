@@ -10,4 +10,4 @@ uploaded_file=st.file_uploader("Upload the STTM")
 if uploaded_file is not None:
 #read excel
   df=pd.read_excel(uploaded_file)
-  print(df)
+  st.dataframe(df)

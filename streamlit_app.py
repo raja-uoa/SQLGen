@@ -11,3 +11,12 @@ if uploaded_file is not None:
 #read excel
   df=pd.read_excel(uploaded_file)
   st.dataframe(df)
+
+from langchain.embeddings import GooglePalmEmbeddings
+from langchain.llms import GooglePalm
+import google.generativeai
+llm = GooglePalm(google_api_key=st.secrets['api_key'])
+
+from langchain.agents import create_pandas_dataframe_agent
+agent=create_pandas_dataframe_agent(llm,df)
+agent.run("return a sql with join between customer and customer_address based on fk with primary=true")

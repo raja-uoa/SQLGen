@@ -19,4 +19,5 @@ llm = GooglePalm(google_api_key=st.secrets['api_key'])
 
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 agent=create_pandas_dataframe_agent(llm,df)
-agent.run("return a sql with join between customer and customer_address based on fk with primary=true")
+agent.run("how many number of rows")
+#return a sql with join between customer and customer_address based on fk with primary=true

@@ -21,3 +21,5 @@ from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe
 agent=create_pandas_dataframe_agent(llm,df)
 agent.run("how many number of rows")
 #return a sql with join between customer and customer_address based on fk with primary=true
+
+st.write(print(llm("What are some of the pros and cons of Python as a programming language?")))
